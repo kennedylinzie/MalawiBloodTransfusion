@@ -29,7 +29,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Hospital extends User {
-
+    private String mean;
     private  connectionsManager conman;
     private String district;
     private String licence;
