@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.malawibloodtransfusion">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MalawiBloodTransfusion"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".viewSpecificuser"></activity>
+        <activity android:name=".hospital_help_page" />
+        <activity android:name=".donor_help_page" />
+        <activity android:name=".hospital_views" />
+        <activity android:name=".blood_update_Activity" />
+        <activity android:name=".hospital_update_Activity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".Donor_update_Activity" />
+        <activity android:name=".Hospital_center" />
+        <activity android:name=".Hospital_login" />
+        <activity android:name=".Hospital_register" />
+        <activity android:name=".donorCenter" />
+        <activity android:name=".hospital_waiting_room" />
+        <activity android:name=".Entry_point">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".donor_register" />
+        <activity android:name=".donor_login" />
+
+        <service android:name=".MyService" />
+    </application>
+
+</manifest>

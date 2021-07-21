@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/donor_navigation_home">
+
+    <fragment
+        android:id="@+id/donor_navigation_home"
+        android:name="com.example.malawibloodtransfusion.donor.ui.home.donor_HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/donor_fragment_home" />
+
+    <fragment
+        android:id="@+id/donor_navigation_location"
+        android:name="com.example.malawibloodtransfusion.donor.ui.donormap.MapFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/donor_fragment_map" />
+
+    <fragment
+        android:id="@+id/donor_navigation_management"
+        android:name="com.example.malawibloodtransfusion.donor.ui.management.Account_management_Fragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/donor_fragment_management" />
+</navigation>
